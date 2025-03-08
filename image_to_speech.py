@@ -34,9 +34,6 @@ print(f"Image saved to {image_path}")
 
 cap.release()
 
-################
-################
-################
 
 prompt_simple = "Describe the image in an objective manner such that you only explain "
 prompt_artful = "Describe this image in an artful manner such that a blind person should be able to visualize it in their mind."
@@ -59,9 +56,6 @@ else:
     print("artful")
 print(response.message.content)
 
-#################
-#################
-#################
 
 client = OpenAI(
 api_key = os.environ.get("OPENAI_API_KEY"),
@@ -81,9 +75,6 @@ chat_completion = client.chat.completions.create(
 
 print(chat_completion.choices[0].message.content)
 text = chat_completion.choices[0].message.content
-###################
-###################
-###################
 
 model = VitsModel.from_pretrained("facebook/mms-tts-tur")
 tokenizer = AutoTokenizer.from_pretrained("facebook/mms-tts-tur")
