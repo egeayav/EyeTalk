@@ -36,7 +36,7 @@ cap.release()
 
 
 prompt_simple = "Describe the image in an objective manner such that you only explain "
-prompt_artful = "Describe this image in an artful manner such that a blind person should be able to visualize it in their mind."
+prompt_artful = "Describe this image in an artful and detailed manner such that a person who has not seen the image should be able to visualize it in their mind."
 
 def img_to_text(prompt):
     response = ollama.chat(
