@@ -54,7 +54,7 @@ if selection == "0":
 else:
     response = img_to_text(prompt_artful)
     print("artful")
-print(response.message.content)
+
 
 
 client = OpenAI(
